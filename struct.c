@@ -22,6 +22,26 @@ void ImprimePessoa(Pessoa P) // Declara um parametro como {
     printf("idade: %d Peso: %f");
 }
 
+Pessoa setPessoa(int idade, float peso, float altura){
+    Pessoa p;
+    P.idade = idade;
+    P.Peso = peso;
+    P.Altura = altura;
+    return P // Retorna a struct com os parametros
+}
+
+void ImprimePessoa(Pessoa P){
+      printf("Idade: %d  Peso: %f Altura: %f\n", P.Idade, P.Peso, P.Altura);
+} 
+
+//Passagem por referência
+
+void setPessoa(Pessoa *p, int idade, float peso, float altura){
+    (*P).Idade = idade;
+    P ->Peso = Peso;
+    P ->Altura = altura;
+}
+
 struct ficha_de_aluno aluno;
 
 
